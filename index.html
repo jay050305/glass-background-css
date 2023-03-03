@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glass BG with CSS</title>
+    <style>
+        body{
+            background: url('superman-image-5.jpg');
+            background-size: 120%;
+            /* background-position: center left; */
+            height: 100%;
+            width: fit-content;
+        }
+        div.card{
+            position: absolute;
+            inset: 0;
+            margin: auto;
+            height: 500px;
+            width: 300px;
+            text-align: center;
+            border-radius: 10px;
+            font-family: sans-serif;
+            font-size: 0.8rem;
+
+            box-shadow: 0 0 10px black;
+
+            display: flex;
+            align-items: center;
+
+            /* background: #ffffff4e; */
+            backdrop-filter: blur(15px);
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>This card has glass background</h1>
+    </div>
+</body>
+</html>
